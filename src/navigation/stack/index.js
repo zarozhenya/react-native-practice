@@ -2,6 +2,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Home} from '../screens/home';
 import {Info} from '../screens/info';
+import {Notifications} from '../screens/notifications';
 
 const Stack = createNativeStackNavigator();
 
@@ -10,6 +11,7 @@ export const MainStack = () => {
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Info" component={Info} />
+      <Stack.Screen name="Notifications" component={Notifications} />
     </Stack.Navigator>
   );
 };
