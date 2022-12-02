@@ -7,7 +7,9 @@ export const ButtonList = ({buttons}) => {
   return (
     <FlatList
       data={buttons}
-      renderItem={({item}) => <ListItem item={item} />}
+      renderItem={({item, index}) => (
+        <ListItem item={item} index={index} length={buttons.length} />
+      )}
       style={styles.buttonContainer}
     />
   );

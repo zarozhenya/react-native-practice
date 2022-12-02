@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 
-export const styles = StyleSheet.create({
+export const styles = EStyleSheet.create({
   buttonContainer: {
     padding: 10,
   },
@@ -15,6 +15,8 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
   },
   text: {
-    color: '#303030',
+    color: '$textColor',
+    fontFamily: '$primaryFont',
+    fontSize: '$primaryFontSize',
   },
 });

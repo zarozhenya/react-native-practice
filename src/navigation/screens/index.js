@@ -1,1 +1,1 @@
-export const screensData = [{key: 'Home', title: 'Home'}];
+export const screensData = [{key: 'Info', title: 'Info'}];
