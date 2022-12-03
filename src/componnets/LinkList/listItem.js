@@ -15,8 +15,8 @@ export const ListItem = ({item, index, length}) => {
       onPress={handlePress}
       style={
         index !== length - 1
-          ? [styles.buttonItem, {marginBottom: 10}]
-          : styles.buttonItem
+          ? [styles.linkItem, {marginBottom: 10}]
+          : styles.linkItem
       }>
       <GradientText style={styles.text} colors={['#0000ff', '#ff0000']}>
         {item.title}

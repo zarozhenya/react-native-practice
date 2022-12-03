@@ -3,14 +3,14 @@ import {FlatList} from 'react-native';
 import {ListItem} from './listItem';
 import {styles} from './styles';
 
-export const ButtonList = ({buttons}) => {
+export const LinkList = ({links}) => {
   return (
     <FlatList
-      data={buttons}
+      data={links}
       renderItem={({item, index}) => (
-        <ListItem item={item} index={index} length={buttons.length} />
+        <ListItem item={item} index={index} length={links.length} />
       )}
-      style={styles.buttonContainer}
+      style={styles.linkContainer}
     />
   );
 };

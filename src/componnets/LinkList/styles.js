@@ -1,10 +1,10 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
 
 export const styles = EStyleSheet.create({
-  buttonContainer: {
+  linkContainer: {
     padding: 10,
   },
-  buttonItem: {
+  linkItem: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
