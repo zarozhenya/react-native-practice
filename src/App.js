@@ -4,6 +4,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import SplashScreen from 'react-native-splash-screen';
 import Config from 'react-native-config';
 import {Platform} from 'react-native';
+import FlashMessage from 'react-native-flash-message';
 
 EStyleSheet.build({
   $textColor: '#303030',
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <>
       <Navigation />
+      <FlashMessage position="bottom" />
     </>
   );
 };
